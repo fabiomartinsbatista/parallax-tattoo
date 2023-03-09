@@ -122,6 +122,19 @@ text-shadow: 0 0 15px #fff;
 
 }
 
+.imagem01{
+  float: left;
+  margin-right: 40px;
+border: solid;
+border-style: inset;
+border-color: #ff0000;
+border-width: 10px;
+border-top:#000;
+border-bottom: #000;
+
+
+}
+
 
 
 
@@ -141,11 +154,15 @@ body{
     overflow-wrap: break-word;
   }
   
-  h2,h3,h4,h5,h6{
+  h2,h3,h5,h6{
     font-weight: 900;
     color: #ffffff;
   padding-left: 20px;
   text-align: center;
+  }
+
+  h4{
+    color: #ff0000;
   }
 
  h1 {
@@ -156,8 +173,12 @@ body{
   text-align: center;
 }
   p{
-  text-align: center;
+  text-align:left;
   color: white !important;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+
 
 }
 
@@ -308,6 +329,8 @@ body{
 			list-style-type: none;
     }
 
+   
+
     .botao1 {
 			background-color: #ff0000;
 			border: none;
@@ -356,9 +379,72 @@ body{
 			}
 
 			to {
-				opacity: 1;
+				opacity: 0;
 			}
 		}
+
+    a{
+      color: #ff0000;
+      width: 30px;
+      text-decoration: none;
+      
+    }
+
+
+
+    
+
+    @media only screen and (max-width: 480px) {
+      .menu {
+        display: none;
+      }
+      
+      .conteudo {
+        width: 100%;
+      }
+    }
+    
+    /* Estilos para telas entre 480px e 767px */
+    @media only screen and (min-width: 481px) and (max-width: 767px) {
+      .menu {
+        display: block;
+        width: 100%;
+      }
+      
+      .conteudo {
+        width: 100%;
+      }
+    }
+    
+    /* Estilos para telas entre 768px e 1023px */
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      .menu {
+        display: block;
+        width: 30%;
+        float: left;
+      }
+      
+      .conteudo {
+        width: 70%;
+        float: right;
+      }
+    }
+    
+    /* Estilos para telas maiores que 1024px */
+    @media only screen and (min-width: 1024px) {
+      .menu {
+        display: block;
+        width: 20%;
+        float: left;
+      }
+      
+      .conteudo {
+        width: 80%;
+        float: right;
+      }
+    }
+
+
 
   
   

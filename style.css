@@ -313,14 +313,10 @@ body{
 			text-align: center;
       z-index: 1;
       padding-bottom: 200px;
-
-      position: relative;
-      left: -500px;
-      width: 1800px;
-       height: 450px; 
-       
-
-     
+      position:absolute;
+      left: 40px;
+      width: 1900px;
+       height: 350px; 
 		}
 
     ul {
@@ -348,7 +344,7 @@ body{
       z-index: 200;
       font-size: 20px;
      top: 280px;
-     right: 600px;
+     right: 1500px;
 		}
 
 		.botao1::before {
@@ -356,8 +352,8 @@ body{
 			position: absolute;
 			top: -50%;
 			left: -50%;
-			width: 200%;
-			height: 200%;
+			width: 300%;
+			height: 300%;
 			background-color: #ff0000;
 			transform: rotate(45deg);
 			animation: shine 1.5s linear infinite;
@@ -390,60 +386,29 @@ body{
       
     }
 
-
-
-    
-
-    @media only screen and (max-width: 480px) {
-      .menu {
-        display: none;
+    @media(max-width: 740px) {
+      html{
+          font-size: 65%;
       }
-      
-      .conteudo {
-        width: 100%;
+  }
+  @media(max-width: 580) {
+      html{
+          font-size: 40%;
       }
+  }
+
+  @media (max-width: 425px){
+    .menu{
+      display: none;
+    }
+    main{
+      width: 300%;
     }
     
-    /* Estilos para telas entre 480px e 767px */
-    @media only screen and (min-width: 481px) and (max-width: 767px) {
-      .menu {
-        display: block;
-        width: 100%;
-      }
-      
-      .conteudo {
-        width: 100%;
-      }
-    }
+  }
     
-    /* Estilos para telas entre 768px e 1023px */
-    @media only screen and (min-width: 768px) and (max-width: 1023px) {
-      .menu {
-        display: block;
-        width: 30%;
-        float: left;
-      }
-      
-      .conteudo {
-        width: 70%;
-        float: right;
-      }
-    }
-    
-    /* Estilos para telas maiores que 1024px */
-    @media only screen and (min-width: 1024px) {
-      .menu {
-        display: block;
-        width: 20%;
-        float: left;
-      }
-      
-      .conteudo {
-        width: 80%;
-        float: right;
-      }
-    }
 
+   
 
 
   
